@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
 
-const db = require("./Models");
 
 const app = express();
 
@@ -17,6 +16,7 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/custommethoddb", { useNewUrlParser: true });
 
+require("./routes/apiroutes")(express.Router())
 
 
 app.listen(PORT, () => {
