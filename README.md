@@ -15,7 +15,7 @@ I  create this project from the outline given to me by my Triology Education Ser
 I was the only person contributing to this project, but  had help from my professor, TA, tutor and classmates. 
 
 ## Challenges
-  
+I took some of the database routes from an in class activity, but I didn't realize I hadn't changed it to the database in the seeders folder. I also had trouble with the route for adding a "newwork". I was able to get the   
   
 ## Live Site on Heroku
 

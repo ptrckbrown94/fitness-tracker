@@ -7,24 +7,19 @@ module.exports = function(app){
     
     
     // Import the model to use its database functions.
-    
-    
-    
     // Create all our routes and set up logic within those routes where required.
-    
     // Add exercises to a previous workout plan.
-    
     // Add new exercises to a new workout plan.
     
     //get last workout
     app.get("/api/workouts", function(req, res) {
-        console.log("HELLO")
         db.Workout.find().then(dbWorkout => res.json(dbWorkout))
     });
     
     // adding workout
     app.post("/api/workouts", function(req, res){
-        db.Workout.create({}).then(dbworkout => res.json(dbWorkout))
+
+        db.Workout.create({}).then(dbWorkout => res.json(dbWorkout))
     });
 
     app.put("/api/workouts/:id", function(req, res){
@@ -41,6 +36,8 @@ module.exports = function(app){
         console.log("HELLO")
         db.Workout.find().then(dbWorkout => res.json(dbWorkout))
     });
+
+
 
 
 
